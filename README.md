@@ -3,7 +3,7 @@ Description
 
 Ce projet est une application de chat fullstack que j'ai développé dans le cadre de mon apprentissage de TypeScript et de l'architecture scalable offerte par NestJS. L'objectif est de mettre en place une application moderne, sécurisée, et facile à maintenir. Le backend est construit avec NestJS et Prisma, tandis que le frontend utilise React/Remix pour la gestion des interfaces.
 
-Fonctionnalités (actuellement)
+Fonctionnalités (16/10/2024)
 
 Backend (NestJS)
 
@@ -31,7 +31,6 @@ Installation des dépendances
 
 Clonez le dépôt et installez les dépendances pour le backend et le frontend.
 
-bash
 
 # Backend (NestJS)
 cd backend
@@ -46,43 +45,23 @@ Configuration
 Créez un fichier .env dans les répertoires backend et frontend et renseignez les informations nécessaires :
 Backend .env
 
-bash
+    DATABASE_URL=postgresql://username:password@neon-db-url/dbname
+    JWT_SECRET=your_jwt_secret
 
-DATABASE_URL=postgresql://username:password@neon-db-url/dbname
-JWT_SECRET=your_jwt_secret
-
-Frontend .env
-
-bash
-
-API_URL=http://localhost:3000/api
-
-Migration de la base de données
-
-Pour initialiser la base de données avec Prisma, exécutez la commande suivante dans le répertoire backend :
-
-bash
-
-npx prisma migrate dev
 
 Démarrage
 
 Lancez le serveur backend et le frontend :
 
-bash
 
-# Backend
-cd backend
-nest start --watch
+    # Backend
+    cd backend
+    nest start --watch
+    
+    # Frontend
+    cd frontend
+    npm run dev
 
-# Frontend
-cd frontend
-npm run dev
-
-Accès
-
-    API : http://localhost:3000/api
-    Frontend : http://localhost:3001
 
 Technologies
 
@@ -92,6 +71,6 @@ Technologies
 
 Améliorations futures
 
-    Implémentation d'un système de messagerie en temps réel avec WebSockets.
+    Implémentation d'un système de messagerie en temps réel.
     Gestion des rôles d'utilisateur (admin, utilisateur standard).
     Amélioration de l'interface utilisateur (UI) et accessibilité.

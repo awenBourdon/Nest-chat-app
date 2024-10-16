@@ -1,9 +1,9 @@
-##Chat Application Fullstack - NestJS & React/Remix
+# Chat Application Fullstack - NestJS & React/Remix
 Description
 
 Ce projet est une application de chat fullstack que j'ai développé dans le cadre de mon apprentissage de TypeScript et de l'architecture scalable offerte par NestJS. L'objectif est de mettre en place une application moderne, sécurisée, et facile à maintenir. Le backend est construit avec NestJS et Prisma, tandis que le frontend utilise React/Remix pour la gestion des interfaces.
 
-Fonctionnalités (16/10/2024)
+# Fonctionnalités (16/10/2024)
 
 Backend (NestJS)
 
